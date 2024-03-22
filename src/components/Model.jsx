@@ -1,47 +1,66 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ModelView from "./ModelView";
-import { useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { yellowImg } from "../utils";
 
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { View } from "@react-three/drei";
-
-useGSAP;
+import { models, sizes } from "../constants";
+import { animateWithGsapTimeline } from "../utils/animations";
 
 const Model = () => {
   const [size, setSize] = useState("small");
   const [model, setModel] = useState({
-    title: "iPhone 15 Pro Natural Titanium",
-    color: ["#8f8a81", "#ffe789", "#6f6c64"],
+    title: "iPhone 15 Pro in Natural Titanium",
+    color: ["#8F8A81", "#FFE7B9", "#6F6C64"],
     img: yellowImg,
   });
 
-  //camera control for the model view
+  // camera control for the model view
   const cameraControlSmall = useRef();
   const cameraControlLarge = useRef();
 
-  //model control for the model view
+  // model
   const small = useRef(new THREE.Group());
   const large = useRef(new THREE.Group());
 
-  //rotation for the model view
+  // rotation
   const [smallRotation, setSmallRotation] = useState(0);
   const [largeRotation, setLargeRotation] = useState(0);
 
+  const tl = gsap.timeline();
+
+  useEffect(() => {
+    if (size === "large") {
+      animateWithGsapTimeline(tl, small, smallRotation, "#view1", "#view2", {
+        transform: "translateX(-100%)",
+        duration: 2,
+      });
+    }
+
+    if (size === "small") {
+      animateWithGsapTimeline(tl, large, largeRotation, "#view2", "#view1", {
+        transform: "translateX(0)",
+        duration: 2,
+      });
+    }
+  }, [size]);
+
   useGSAP(() => {
     gsap.to("#heading", { y: 0, opacity: 1 });
-  });
+  }, []);
+
   return (
-    <section className="coomon-padding">
+    <section className="common-padding">
       <div className="screen-max-width">
-        <h1 className="section-heading" id="heading">
+        <h1 id="heading" className="section-heading">
           Take a closer look.
         </h1>
 
         <div className="flex flex-col items-center mt-5">
-          <div className="w-full h-[75vh] md:h-[90vh] overfolw-hidden relative">
+          <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
             <ModelView
               index={1}
               groupRef={small}
@@ -51,6 +70,7 @@ const Model = () => {
               item={model}
               size={size}
             />
+
             <ModelView
               index={2}
               groupRef={large}
