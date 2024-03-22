@@ -7,7 +7,7 @@ Title: Apple iPhone 15 Pro Max Black
 */
 
 import * as THREE from "three";
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 
 function Model(props) {
@@ -145,7 +145,7 @@ function Model(props) {
         material={materials.pIJKfZsazmcpEiU}
         scale={0.01}
       >
-        <THREE.MeshStandardMaterial roughness={1} map={texture} />
+        <meshStandardMaterial roughness={1} map={texture} />
       </mesh>
       <mesh
         castShadow
