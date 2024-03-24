@@ -100,8 +100,10 @@ const Features = () => {
                   <p className="feature-text g_text">
                     Titanium has one of the best strength-to-weight ratios of
                     any metal, making these our{" "}
-                    <span className="text-white">lightest Pro model ever.</span>
-                    , You'll notice the difference the moment you pick one up.
+                    <span className="text-white">
+                      lightest Pro model ever.{" "}
+                    </span>
+                    You'll notice the difference the moment you pick one up.
                   </p>
                 </div>
               </div>
