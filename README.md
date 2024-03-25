@@ -8,7 +8,8 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-![screenshot] (preview video)
+[![image](https://github.com/mirkozlatunic/apple-app/assets/110959892/c7432b98-8177-479e-a3e1-1d6edc507836)]
+
 
   </div>
 
