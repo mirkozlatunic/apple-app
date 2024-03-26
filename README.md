@@ -18,7 +18,7 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🚀 [GitHub Page](#github-page)
+5. 🚀 [Home Page](#home-page)
 6. 🛠️ [Improvements Ideas](#improvements)
 
 ## <a name="introduction">🤖 Introduction</a>
@@ -82,9 +82,9 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
-## <a name="github-page">🚀 GitHub Page</a>
+## <a name="home-page">🚀 Home Page</a>
 
-- [Github Page](https://mirkozlatunic.github.io/apple-app/)
+- [Home Page](https://www.apple-clone.com/)
 
 ## <a name="improvements">🛠️ Improvements Ideas</a>
 
