@@ -48,7 +48,7 @@ And many more features, including code architecture and reusability, to inspire 
 
 ## <a name="home-page">🚀 Home Page</a>
 
-- [Home Page](https://www.apple-clone.com/)
+- [Home Page](https://tubular-seahorse-04dd76.netlify.app/)
 
 ## <a name="improvements">🛠️ Improvements Ideas</a>
 
