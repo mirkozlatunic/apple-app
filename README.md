@@ -17,9 +17,8 @@
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🚀 [Home Page](#home-page)
-6. 🛠️ [Improvements Ideas](#improvements)
+4. 🚀 [Home Page](#home-page)
+5. 🛠️ [Improvements Ideas](#improvements)
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -46,41 +45,6 @@ Through the power of React.js and TailwindCSS, this project brings to life a stu
 👉 **Completely Responsive**: Deliver consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.
 
 And many more features, including code architecture and reusability, to inspire your creativity and bring your vision to life.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/mirkozlatunic/apple-app.git
-cd apple-app
-```
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
 ## <a name="home-page">🚀 Home Page</a>
 
